@@ -48,13 +48,13 @@ $ sudo apt install make
 $ make essentials
 ```
 
-4. nvimでプラグインをインストール（dein）  
+4. nvimのプラグインをインストール（dein）  
 nvimを開いて`:call dein#update()`を実行
 
-5. tmuxでプラグインをインストール（tpm）  
+5. tmuxのプラグインをインストール（tpm）  
 tmuxを開いて`prefix + I`を実行
 
 
-# Windows Terminalの設定
+# Terminalの設定
 
 そのうち書く。配色はnord、フォントはRickty Discord for Powerlineに設定する。
