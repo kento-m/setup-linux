@@ -30,7 +30,7 @@ $ git git@github.com:kento-m/setup-linux.git
 $ git config --global user.name "kento-m"
 ```
 
-## makeの実行
+## 2. 必須ツールのインストール
 
 1. 構築するディストリビューションに合わせて移動（例はubuntu）
 ```
@@ -39,6 +39,7 @@ $ cd ~/setup-linux/ubuntu
 
 2. makeのインストール
 ```
+# ubuntu
 $ sudo apt install make
 ```
 
@@ -50,7 +51,7 @@ $ make essentials
 4. nvimでプラグインをインストール（dein）  
 nvimを開いて`:call dein#update()`を実行
 
-5. tmuxでプラグインをインストール（tpm）
+5. tmuxでプラグインをインストール（tpm）  
 tmuxを開いて`prefix + I`を実行
 
 
