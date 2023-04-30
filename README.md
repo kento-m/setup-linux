@@ -24,3 +24,8 @@ $ ssh-add ~/.ssh/id_ed25519
 ```
 $ git git@github.com:kento-m/setup-linux.git
 ```
+
+4. gitの設定
+```
+$ git config --global user.name "kento-m"
+```
