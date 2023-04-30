@@ -48,10 +48,14 @@ $ sudo apt install make
 $ make essentials
 ```
 
-4. nvimのプラグインをインストール（dein）  
+4. ターミナルの新しいセッションを開始する
+zshに切り替えるために新規タブで新しいセッションを開始する。
+たまに設定ミスでターミナルが動かなくなるので既存のセッションは残しておく。
+
+5. nvimのプラグインをインストール（dein）  
 nvimを開いて`:call dein#update()`を実行
 
-5. tmuxのプラグインをインストール（tpm）  
+6. tmuxのプラグインをインストール（tpm）  
 tmuxを開いて`prefix + I`を実行
 
 
