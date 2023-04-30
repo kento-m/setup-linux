@@ -2,8 +2,8 @@
 Linuxでの開発環境構築に使うファイル郡。
 主にWSL2で新しい環境を構築するときに使用する。
 
-# 利用手順
-## GitHub準備
+# 設定手順
+## 1. GitHub準備
 
 どうせ毎回環境構築方法を微修正するので最初から編集前提でcloneする。
 
@@ -29,3 +29,31 @@ $ git git@github.com:kento-m/setup-linux.git
 ```
 $ git config --global user.name "kento-m"
 ```
+
+## makeの実行
+
+1. 構築するディストリビューションに合わせて移動（例はubuntu）
+```
+$ cd ~/setup-linux/ubuntu
+```
+
+2. makeのインストール
+```
+$ sudo apt install make
+```
+
+3. 必須ツールのインストール
+```
+$ make essentials
+```
+
+4. nvimでプラグインをインストール（dein）  
+nvimを開いて`:call dein#update()`を実行
+
+5. tmuxでプラグインをインストール（tpm）
+tmuxを開いて`prefix + I`を実行
+
+
+# Windows Terminalの設定
+
+そのうち書く。配色はnord、フォントはRickty Discord for Powerlineに設定する。
