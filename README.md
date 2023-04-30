@@ -17,8 +17,8 @@ $ eval `ssh-agent`
 $ ssh-add ~/.ssh/id_ed25519
 ```
 
-2. GitHubに鍵を登録する
-(鍵登録ページ)[https://github.com/settings/keys]
+2. GitHubに鍵を登録する  
+[鍵登録ページ](https://github.com/settings/keys)
 
 3. git clone
 ```
