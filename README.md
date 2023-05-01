@@ -22,7 +22,7 @@ $ ssh-add ~/.ssh/id_ed25519
 
 3. git clone
 ```
-$ git git@github.com:kento-m/setup-linux.git
+$ git clone git@github.com:kento-m/setup-linux.git
 ```
 
 4. gitの設定
@@ -67,13 +67,13 @@ $ pyenv global 3.11.3 2.7.18
 ```
 
 8. golangのインストール  
-[Goダウンロードページ](https://go.dev/dl/)で最新のstableバージョンをチェックしてインストールする。
+[golangダウンロードページ](https://go.dev/dl/)で最新のstableバージョンをチェックしてインストールする。
 ```
 $ goenv install 1.20.3
 $ goenv global 1.20.3
 ```
 
-9. 必須ツールのセットアップが完了してからインストールするツールのインストール
+9. 必須ツールのセットアップが完了してからインストールするツールをインストール
 ```
 $ make second
 ```

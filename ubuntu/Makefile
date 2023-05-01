@@ -7,11 +7,11 @@
 first: apt zsh nvim tmux pyenv goenv rust
 
 apt:
-	sudo apt update
-	sudo apt upgrade
+	sudo apt update -y
+	sudo apt upgrade -y
 
 zsh:
-	sudo apt install zsh
+	sudo apt install -y zsh
 	chsh -s /bin/zsh
 	cp ../dotfiles/.zshrc ~/
 
@@ -22,7 +22,7 @@ nvim:
 	./squashfs-root/AppRun --version
 	sudo mv squashfs-root /
 	sudo ln -s /squashfs-root/AppRun /usr/bin/nvim
-	sh -c "$(wget -O- https://raw.githubusercontent.com/Shougo/dein-installer.vim/master/installer.sh)"
+	sh -c "$$(wget -O- https://raw.githubusercontent.com/Shougo/dein-installer.vim/master/installer.sh)"
 	cp -r ../dotfiles/nvim ~/.config/
 	rm nvim.appimage
 
@@ -34,7 +34,7 @@ pyenv:
 	git clone https://github.com/pyenv/pyenv.git ~/.pyenv
 	sed -e 's/#pyenv#//' ~/.zshrc > .zshrc.tmp
 	mv .zshrc.tmp ~/.zshrc
-	sudo apt install build-essential zlib1g-dev libssl-dev liblzma-dev tk-dev libsqlite3-dev libreadline-dev libffi-dev libbz2-dev
+	sudo apt install -y build-essential zlib1g-dev libssl-dev liblzma-dev tk-dev libsqlite3-dev libreadline-dev libffi-dev libbz2-dev
 
 goenv:
 	git clone https://github.com/dataich/goenv.git ~/.goenv
@@ -44,7 +44,7 @@ goenv:
 rust:
 	curl https://sh.rustup.rs -sSf | sh
 	sudo cp ~/.rustup/toolchains/stable-x86_64-unknown-linux-gnu/share/zsh/site-functions/_cargo /usr/share/zsh/vendor-completions
-	rustup completions zsh > _rustup
+	~/.cargo/bin/rustup completions zsh > _rustup
 	sudo mv _rustup /usr/share/zsh/vendor-completions/_rustup
 
 ########################
@@ -64,4 +64,3 @@ powerline:
 	pip install --user powerline-shell
 	sed -e 's/#powerline#//' ~/.zshrc > .zshrc.tmp
 	mv .zshrc.tmp ~/.zshrc
-	source ~/.zshrc
