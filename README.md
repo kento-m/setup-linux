@@ -30,7 +30,7 @@ $ git git@github.com:kento-m/setup-linux.git
 $ git config --global user.name "kento-m"
 ```
 
-## 2. 必須ツールのインストール
+## 2. インストール
 
 1. 構築するディストリビューションに合わせて移動（例はubuntu）
 ```
@@ -45,7 +45,7 @@ $ sudo apt install make
 
 3. 必須ツールのインストール
 ```
-$ make essentials
+$ make first
 ```
 
 4. ターミナルの新しいセッションを開始する  
@@ -58,6 +58,25 @@ nvimを開いて`:call dein#update()`を実行
 6. tmuxのプラグインをインストール（tpm）  
 tmuxを開いて`prefix + I`を実行
 
+7. pythonのインストール  
+[pythonダウンロードページ](https://www.python.org/downloads/)で最新のstableバージョンをチェックしてインストールする。
+```
+$ pyenv install 3.11.3
+$ pyenv install 2.7.18
+$ pyenv global 3.11.3 2.7.18
+```
+
+8. golangのインストール  
+[Goダウンロードページ](https://go.dev/dl/)で最新のstableバージョンをチェックしてインストールする。
+```
+$ goenv install 1.20.3
+$ goenv global 1.20.3
+```
+
+9. 必須ツールのセットアップが完了してからインストールするツールのインストール
+```
+$ make second
+```
 
 # Terminalの設定
 

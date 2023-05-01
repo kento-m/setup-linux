@@ -98,43 +98,42 @@ function history-all { history -E 1 }
 # ------------------------------
 # Powerline
 # ------------------------------
-#function powerline_precmd() {
-#  PS1="$(~/.local/bin/powerline-shell --shell zsh $?)"
-#}
-#
-#function install_powerline_precmd() {
-#  for s in "${precmd_functions[@]}"; do
-#    if [ "$s" = "powerline_precmd" ]; then
-#      return
-#    fi
-#  done
-#  precmd_functions+=(powerline_precmd)
-#}
-#
-#if [ "$TERM" != "linux" ]; then
-#  install_powerline_precmd
-#fi
+#powerline#function powerline_precmd() {
+#powerline#  PS1="$(~/.local/bin/powerline-shell --shell zsh $?)"
+#powerline#}
+#powerline#
+#powerline#function install_powerline_precmd() {
+#powerline#  for s in "${precmd_functions[@]}"; do
+#powerline#    if [ "$s" = "powerline_precmd" ]; then
+#powerline#      return
+#powerline#    fi
+#powerline#  done
+#powerline#  precmd_functions+=(powerline_precmd)
+#powerline#}
+#powerline#
+#powerline#if [ "$TERM" != "linux" ]; then
+#powerline#  install_powerline_precmd
+#powerline#fi
 
+# ------------------------------
+# For python
+# ------------------------------
+#pyenv#export PYENV_ROOT=$HOME/.pyenv
+#pyenv#export PATH="$PYENV_ROOT/bin:$PATH"
+#pyenv#eval "$(pyenv init --path)"
+#pyenv#eval "$(pyenv init -)"
 
 # ------------------------------
 # For golang
 # ------------------------------
-#export GOENV_ROOT=$HOME/.goenv
-#export PATH=$GOENV_ROOT/bin:$HOME/go/bin:$PATH
-#eval "$(goenv init -)"
+#goenv#export GOENV_ROOT=$HOME/.goenv
+#goenv#export PATH=$GOENV_ROOT/bin:$HOME/go/bin:$PATH
+#goenv#eval "$(goenv init -)"
 
 # ------------------------------
 # For Node.js
 # ------------------------------
 #export PATH=$HOME/.nodebrew/current/bin:$PATH
-
-# ------------------------------
-# For python
-# ------------------------------
-#export PYENV_ROOT=$HOME/.pyenv
-#export PATH="$PYENV_ROOT/bin:$PATH"
-#eval "$(pyenv init --path)"
-#eval "$(pyenv init -)"
 
 # ------------------------------
 # For k8s
