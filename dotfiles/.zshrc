@@ -131,20 +131,6 @@ function history-all { history -E 1 }
 #goenv#export PATH=$GOENV_ROOT/bin:$HOME/go/bin:$PATH
 #goenv#eval "$(goenv init -)"
 
-# ------------------------------
-# For Node.js
-# ------------------------------
-#export PATH=$HOME/.nodebrew/current/bin:$PATH
-
-# ------------------------------
-# For k8s
-# ------------------------------
-#source <(kubectl completion zsh)
-
-# ------------------------------
-# For minikube
-# ------------------------------
-#alias use-minikube-docker='eval $(minikube docker-env)'
 
 # zshの起動が遅くなったときにプロファイルを見る用
 #if (which zprof > /dev/null 2>&1) ;then
