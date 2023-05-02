@@ -52,8 +52,10 @@ $ make first
 zshに切り替えるために新規タブで新しいセッションを開始する。  
 たまに設定ミスでターミナルが動かなくなるので既存のセッションは残しておく。
 
-5. nvimのプラグインをインストール（dein）  
-nvimを開いて`:call dein#update()`を実行
+5. nvimのプラグインをインストール（lazy.nvim）  
+nvimを開くと自動でプラグインのインストールが始まる。  
+さらにlspをインストールするために`:Mason`を実行する。
+（rust-analyzer, goplsはインストールする。）
 
 6. tmuxのプラグインをインストール（tpm）  
 tmuxを開いて`prefix + I`を実行
