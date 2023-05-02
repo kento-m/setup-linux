@@ -26,7 +26,8 @@ export PATH=/usr/local/sbin:$PATH
 # Aliases
 alias vim='nvim'
 alias vi='nvim'
-alias ll='ls -l'
+alias ls='ls -F --color=auto'
+alias ll='ls -l -F --color=auto'
 
 # ------------------------------
 # Complement

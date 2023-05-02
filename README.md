@@ -80,9 +80,4 @@ $ make second
 
 # Terminalの設定
 
-そのうち書く。配色はnord、フォントはRickty Discord for Powerlineに設定する。
-
-# TODO
-
- - nvim設定のlua化
-
+配色は[nord](https://www.nordtheme.com/ports)、フォントは[Nerd Font](https://www.nerdfonts.com/font-downloads)をダウンロードする。
