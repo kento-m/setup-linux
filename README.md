@@ -83,3 +83,10 @@ $ make second
 # Terminalの設定
 
 配色は[nord](https://www.nordtheme.com/ports)、フォントは[Nerd Font](https://www.nerdfonts.com/font-downloads)をダウンロードする。
+
+# 導入検討中
+
+- nvim
+    - [telescope](https://github.com/nvim-telescope/telescope.nvim)
+    - [nvim-treesitter](https://github.com/nvim-treesitter/nvim-treesitter)
+    - [gitsigns](https://github.com/lewis6991/gitsigns.nvim)
