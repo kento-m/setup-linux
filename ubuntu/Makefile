@@ -22,9 +22,8 @@ nvim:
 	./squashfs-root/AppRun --version
 	sudo mv squashfs-root /
 	sudo ln -s /squashfs-root/AppRun /usr/bin/nvim
-	sh -c "$$(wget -O- https://raw.githubusercontent.com/Shougo/dein-installer.vim/master/installer.sh)"
-	cp -r ../dotfiles/nvim ~/.config/
 	rm nvim.appimage
+	cp -r ../dotfiles/nvim ~/.config/
 
 tmux:
 	git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
