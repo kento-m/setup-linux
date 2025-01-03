@@ -64,16 +64,17 @@ tmuxを開いて`prefix + I`を実行
 7. pythonのインストール  
 [pythonダウンロードページ](https://www.python.org/downloads/)で最新のstableバージョンをチェックしてインストールする。
 ```
-$ pyenv install 3.11.3
+$ pyenv install 3.13.1
 $ pyenv install 2.7.18
 $ pyenv global 3.11.3 2.7.18
 ```
 
 8. golangのインストール  
-[golangダウンロードページ](https://go.dev/dl/)で最新のstableバージョンをチェックしてインストールする。
+[golangダウンロードページ](https://go.dev/doc/install)で最新のstableバージョンをチェックしてインストールする。
+
 ```
-$ goenv install 1.20.3
-$ goenv global 1.20.3
+$ wget https://go.dev/dl/go1.23.4.linux-amd64.tar.gz
+$ sudo tar -C /usr/local -xzf go1.23.4.linux-amd64.tar.gz
 ```
 
 9. 必須ツールのセットアップが完了してからインストールするツールをインストール

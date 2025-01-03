@@ -127,9 +127,7 @@ function history-all { history -E 1 }
 # ------------------------------
 # For golang
 # ------------------------------
-#goenv#export GOENV_ROOT=$HOME/.goenv
-#goenv#export PATH=$GOENV_ROOT/bin:$HOME/go/bin:$PATH
-#goenv#eval "$(goenv init -)"
+#goenv#export PATH=$PATH:/usr/local/go/bin
 
 
 # zshの起動が遅くなったときにプロファイルを見る用

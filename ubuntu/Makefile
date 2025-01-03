@@ -4,7 +4,7 @@
 #
 ########################
 
-first: apt zsh nvim tmux pyenv goenv rust
+first: apt zsh nvim tmux pyenv rust
 
 apt:
 	sudo apt update -y
@@ -23,7 +23,7 @@ nvim:
 	sudo mv squashfs-root /
 	sudo ln -s /squashfs-root/AppRun /usr/bin/nvim
 	rm nvim.appimage
-	cp -r ../dotfiles/nvim ~/.config/
+	cp -r ../dotfiles/nvim ~/.config/nvim/
 
 tmux:
 	git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
@@ -34,11 +34,6 @@ pyenv:
 	sed -e 's/#pyenv#//' ~/.zshrc > .zshrc.tmp
 	mv .zshrc.tmp ~/.zshrc
 	sudo apt install -y build-essential zlib1g-dev libssl-dev liblzma-dev tk-dev libsqlite3-dev libreadline-dev libffi-dev libbz2-dev
-
-goenv:
-	git clone https://github.com/dataich/goenv.git ~/.goenv
-	sed -e 's/#goenv#//' ~/.zshrc > .zshrc.tmp
-	mv .zshrc.tmp ~/.zshrc
 
 rust:
 	curl https://sh.rustup.rs -sSf | sh
