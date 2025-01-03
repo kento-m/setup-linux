@@ -23,6 +23,7 @@ nvim:
 	sudo mv squashfs-root /
 	sudo ln -s /squashfs-root/AppRun /usr/bin/nvim
 	rm nvim.appimage
+	mkdir -p ~/.config/nvim/
 	cp -r ../dotfiles/nvim ~/.config/nvim/
 
 tmux:

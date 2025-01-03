@@ -85,7 +85,9 @@ require("neo-tree").setup({
       hide_dotfiles = true,
       hide_gitignored = true,
     },
-    follow_current_file = false,
+    follow_current_file = {
+        enable = false,
+    },
     group_empty_dirs = false,
     hijack_netrw_behavior = "open_default",
     use_libuv_file_watcher = false,
@@ -99,7 +101,9 @@ require("neo-tree").setup({
     },
   },
   buffers = {
-    follow_current_file = true,
+    follow_current_file = {
+        enable = true,
+    },
     group_empty_dirs = true,
     show_unloaded = true,
     window = {

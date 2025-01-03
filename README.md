@@ -65,8 +65,7 @@ tmuxを開いて`prefix + I`を実行
 [pythonダウンロードページ](https://www.python.org/downloads/)で最新のstableバージョンをチェックしてインストールする。
 ```
 $ pyenv install 3.13.1
-$ pyenv install 2.7.18
-$ pyenv global 3.11.3 2.7.18
+$ pyenv global 3.13.1
 ```
 
 8. golangのインストール  
