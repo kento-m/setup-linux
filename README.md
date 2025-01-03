@@ -83,7 +83,8 @@ $ make second
 
 # Terminalの設定
 
-配色は[nord](https://www.nordtheme.com/ports)、フォントは[Nerd Font](https://www.nerdfonts.com/font-downloads)をダウンロードする。
+
+配色は[nord](https://www.nordtheme.com/ports)、フォントは[CaskaydiaCove Nerd Font](https://github.com/ryanoasis/nerd-fonts/releases/download/v3.3.0/CascadiaCode.zip)をダウンロードする。
 
 # 導入検討中
 
