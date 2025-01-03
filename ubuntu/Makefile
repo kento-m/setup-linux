@@ -50,6 +50,10 @@ rust:
 
 second: pip powerline
 
+go:
+	sed -e 's/#golang#//' ~/.zshrc > .zshrc.tmp
+	mv .zshrc.tmp ~/.zshrc
+
 pip:
 	curl -O https://bootstrap.pypa.io/get-pip.py
 	python get-pip.py
