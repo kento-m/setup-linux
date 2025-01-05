@@ -48,7 +48,7 @@ rust:
 #
 ########################
 
-second: pip powerline
+second: go pip powerline
 
 go:
 	sed -e 's/#golang#//' ~/.zshrc > .zshrc.tmp
